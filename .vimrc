@@ -7,12 +7,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'AndrewRadev/splitjoin'
+Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Yggdroot/LeaderF'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'fatih/vim-go'
 Plugin 'garbas/vim-snipmate'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/goyo.vim'
