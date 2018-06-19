@@ -14,3 +14,6 @@ alias cu="cd .."
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# BASH PROGRAMS
+. /usr/share/autojump/autojump.sh
