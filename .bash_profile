@@ -8,6 +8,7 @@ alias mkdir="mkdir -p"
 alias ls="ls --color=always"
 alias la="ls -a --color=always"
 alias vi="nvim"
+alias cu="cd .."
 
 # DEFAULTS
 

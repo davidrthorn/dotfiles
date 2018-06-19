@@ -35,20 +35,21 @@ Plugin 'xolox/vim-misc'
 call vundle#end()
 filetype plugin indent on
 
+set backupcopy=yes
+set hidden
+set ignorecase
+set nohlsearch
+set number relativenumber
 set path+=**
 set ruler
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-set backupcopy=yes
 set showcmd
-set hidden
-set visualbell
-set wildmenu
-set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
-set ignorecase
 set smartcase
-set number relativenumber
-set splitright
 set splitbelow
+set splitright
+set visualbell
+set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
+set wildmenu
 
 highlight LineNr ctermfg=darkgrey
 
