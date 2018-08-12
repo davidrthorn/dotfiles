@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'dyng/ctrlsf.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Yggdroot/LeaderF'
@@ -20,17 +21,18 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'rstacruz/sparkup'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-commentary'
 Plugin 'takac/vim-hardtime'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/Tagbar'
+Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-scripts/tlib'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'xolox/vim-misc'
-
 
 call vundle#end()
 filetype plugin indent on
@@ -63,6 +65,20 @@ silent !stty -ixon
 " Restore default behaviour when leaving Vim.
 autocmd VimLeave * silent! !stty ixon
 
+
+"---Indentation---
+
+" Python (PEP8)
+au BufNewFile,BufRead *.py;
+      \ set tabstop=4
+      \ set softtabstop=4
+      \ set shiftwidth=4
+      \ set textwidth=79
+      \ set expandtab
+      \ set autoindent
+      \ set fileformat=unix
+
+
 "---Plugins---
 "
 " EasyMotion
@@ -80,12 +96,19 @@ autocmd VimEnter,VimLeave * silent !tmux set status
 nnoremap <leader>q :bp<cr>:bd #<cr>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+" Tagbar
+
+nnoremap <leader>tb :TagbarToggle<CR>
+
 "---Keymappings---
 " Main keys
 map <space> <leader>
 inoremap jk <Esc>
 nnoremap ; :
 nnoremap : ;
+
+" Y acts like D and C
+nnoremap Y y$
 
 " Toggle relative numbering
 nnoremap <leader>rn :set relativenumber!<CR>

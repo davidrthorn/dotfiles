@@ -23,10 +23,8 @@ nnoremap <leader>; $<c-o>;
 nnoremap gcc :action CommentByLineComment
 
 " Easy system copy paste
-noremap <space>y "*y
-noremap <space>Y "*Y
-noremap <space>p "*p
-noremap <space>P "*P
+noremap <leader>y "*y
+noremap <leader>Y "*Y
+noremap <leader>p "*p
+noremap <leader>P "*P
 
-" clear the search buffer when hitting return
-nnoremap <space><cr> :nohlsearch<cr>
