@@ -1,0 +1,32 @@
+set hlsearch
+set number relativenumber
+set surround
+
+map <space> <leader>
+
+<leader>sp :action SplitVertically
+nnoremap ;:
+
+" Make Y behave like D and C
+nnoremap Y y$
+
+" Toggle relative numbering
+nnoremap <leader>rn :set relativenumber!<CR>
+
+" Replace current line with yanked one
+nnoremap <leader>lp V"0p<CR>
+
+" Add semi colon to end of line
+nnoremap <leader>; $<c-o>;
+
+" Comment line
+nnoremap gcc :action CommentByLineComment
+
+" Easy system copy paste
+noremap <space>y "*y
+noremap <space>Y "*Y
+noremap <space>p "*p
+noremap <space>P "*P
+
+" clear the search buffer when hitting return
+nnoremap <space><cr> :nohlsearch<cr>
