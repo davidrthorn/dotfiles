@@ -4,8 +4,8 @@ set surround
 
 map <space> <leader>
 
-<leader>sp :action SplitVertically
-nnoremap ;:
+<leader>sp :action SplitVertically<CR>
+nnoremap ; :
 
 " Make Y behave like D and C
 nnoremap Y y$
@@ -20,7 +20,7 @@ nnoremap <leader>lp V"0p<CR>
 nnoremap <leader>; $<c-o>;
 
 " Comment line
-nnoremap gcc :action CommentByLineComment
+nnoremap gcc :action CommentByLineComment<CR>
 
 " Easy system copy paste
 noremap <leader>y "*y
