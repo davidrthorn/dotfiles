@@ -82,7 +82,7 @@ au BufNewFile,BufRead *.py;
 "---Plugins---
 "
 " EasyMotion
-nmap , \\
+nmap , <Plug>(easymotion-bd-w)
 
 " Hardtime
 let g:hardtime_default_on = 0
