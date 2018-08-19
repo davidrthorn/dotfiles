@@ -11,13 +11,10 @@ Plugin 'dyng/ctrlsf.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Yggdroot/LeaderF'
-Plugin 'arcticicestudio/nord-vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'fatih/vim-go'
 Plugin 'garbas/vim-snipmate'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'junegunn/goyo.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'rstacruz/sparkup'
@@ -28,7 +25,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/Tagbar'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-scripts/tlib'
 Plugin 'wesQ3/vim-windowswap'
@@ -82,7 +78,7 @@ au BufNewFile,BufRead *.py;
 "---Plugins---
 "
 " EasyMotion
-nmap , <Plug>(easymotion-bd-w)
+nnoremap , <Plug>(easymotion-bd-w)
 
 " Hardtime
 let g:hardtime_default_on = 0
