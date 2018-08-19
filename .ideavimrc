@@ -39,3 +39,4 @@ noremap <leader>u :action Unwrap
 
 " Turn highlight off after search
 :nnoremap <CR> :nohlsearch<CR><CR>
+
