@@ -4,6 +4,9 @@ set surround
 
 map <space> <leader>
 
+" KJump
+nmap , :action KJumpAction.Word0<cr>
+
 <leader>sp :action SplitVertically<CR>
 nnoremap ; :
 
@@ -17,7 +20,7 @@ nnoremap <leader>rn :set relativenumber!<CR>
 nnoremap <leader>lp V"0p<CR>
 
 " Add semi colon to end of line
-nnoremap <leader>; $<c-o>;
+nnoremap <leader>; $i;<esc>
 
 " Comment line
 nnoremap gcc :action CommentByLineComment<CR>
