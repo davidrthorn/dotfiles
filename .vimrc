@@ -77,7 +77,7 @@ au BufNewFile,BufRead *.py;
 "---Plugins---
 "
 " EasyMotion
-nnoremap , <Plug>(easymotion-bd-w)
+nmap , <Plug>(easymotion-bd-w)
 
 " Hardtime
 let g:hardtime_default_on = 0
