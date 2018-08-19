@@ -5,9 +5,12 @@ set surround
 map <space> <leader>
 
 " KJump
-nmap , :action KJumpAction.Word0<cr>
+nmap , :action KJumpAction.Word0<CR>
 
+" Split pane vertically
 <leader>sp :action SplitVertically<CR>
+
+" Semicolon for command  
 nnoremap ; :
 
 " Make Y behave like D and C
@@ -27,7 +30,12 @@ nnoremap gcc :action CommentByLineComment<CR>
 
 " Easy system copy paste
 noremap <leader>y "*y
-noremap <leader>Y "*Y
+noremap <leader>Y "*y$
 noremap <leader>p "*p
 noremap <leader>P "*P
 
+" Unwrap surrounding construct
+noremap <leader>u :action Unwrap
+
+" Turn highlight off after search
+:nnoremap <CR> :nohlsearch<CR><CR>
