@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'dyng/ctrlsf.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Yggdroot/LeaderF'
