@@ -1,6 +1,7 @@
-set hlsearch
+set nohlsearch
 set number relativenumber
 set surround
+set clipboard+=unnamed
 
 map <space> <leader>
 
@@ -23,20 +24,12 @@ nnoremap <leader>rn :set relativenumber!<CR>
 nnoremap <leader>lp V"0p<CR>
 
 " Add semi colon to end of line
-nnoremap <leader>; $i;<esc>
+inoremap <C-;> <Esc>A;<Esc>
 
 " Comment line
 nnoremap gcc :action CommentByLineComment<CR>
-
-" Easy system copy paste
-noremap <leader>y "*y
-noremap <leader>Y "*y$
-noremap <leader>p "*p
-noremap <leader>P "*P
+vnoremap gc :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<CR>
 
 " Unwrap surrounding construct
-noremap <leader>u :action Unwrap
-
-" Turn highlight off after search
-:nnoremap <CR> :nohlsearch<CR><CR>
+noremap <leader>u :action Unwrap<CR>
 
