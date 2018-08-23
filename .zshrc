@@ -109,5 +109,7 @@ function dport() {docker inspect "$1" | grep 'IPAddress'}
 
 # Misc
 alias diff="colordiff"
+alias w="wd working"
+alias b="cd -"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
