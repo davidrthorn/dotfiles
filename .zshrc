@@ -94,6 +94,7 @@ alias zshrc="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
 
+# Git
 alias g="git"
 alias gs="git status"
 alias gac="git commit -a"
@@ -101,7 +102,12 @@ alias gap="git commit -a && git push"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gnah="git reset --hard && git clean -df"
 
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+# Docker
+alias dk="docker"
+alias dps="docker ps"
+function dport() {docker inspect "$1" | grep 'IPAddress'} 
+
+# Misc
 alias diff="colordiff"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
