@@ -25,6 +25,7 @@ nnoremap <leader>lp V"0p<CR>
 
 " Add semi colon to end of line
 inoremap <C-;> <Esc>A;<Esc>
+nnoremap <C-;> A;<Esc>
 
 " Comment line
 nnoremap gcc :action CommentByLineComment<CR>
@@ -32,4 +33,7 @@ vnoremap gc :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action Comme
 
 " Unwrap surrounding construct
 noremap <leader>u :action Unwrap<CR>
+
+" Rename variable
+nnoremap <leader>n :action RenameElement<CR>i
 
