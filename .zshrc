@@ -108,7 +108,7 @@ alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
 
 # Warp
-alias wa="wd add working"
+alias wa="wd rm working && wd add working"
 alias w="wd working"
 alias b="cd -"
 
