@@ -90,7 +90,7 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshrc="nvim ~/.zshrc"
+alias zshrc="nvim ~/dotfiles/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v="nvim"
 
@@ -99,7 +99,6 @@ alias g="git"
 alias gs="git status"
 alias gac="git commit -a"
 alias gap="git commit -a && git push"
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gnah="git reset --hard && git clean -df"
 
 # Docker
