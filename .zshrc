@@ -106,11 +106,16 @@ alias gnah="git reset --hard && git clean -df"
 alias dk="docker"
 alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
+alias dcom="docker-compose"
 
 # Warp
 alias wa="wd rm working && wd add working"
 alias w="wd working"
 alias b="cd -"
+
+# Typos
+alias sl="ls"
+alias al="la"
 
 # Misc
 alias diff="colordiff"

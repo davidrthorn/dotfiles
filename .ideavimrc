@@ -37,3 +37,6 @@ noremap <leader>u :action Unwrap<CR>
 " Rename variable
 nnoremap <leader>n :action RenameElement<CR>i
 
+" Surround with quotes
+nnoremap <leader>' ysiw'
+nnoremap <leader>" ysiw"
