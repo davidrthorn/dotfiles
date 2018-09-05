@@ -1,0 +1,16 @@
+{
+  "vim.easymotion": true,
+  "vim.easyMotionMarkerBackgroundColor": "#ff0000",
+  "vim.easyMotionMarkerForegroundColor": "#ffff00",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "after": ["<leader>"]
+    },
+    {
+      "before": [","],
+      "after": ["<leader>", "<leader>", "<leader>", "j"]
+    }
+  ],
+  "vim.leader": "<space>"
+}
