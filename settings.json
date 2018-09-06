@@ -1,16 +1,22 @@
 {
   "vim.easymotion": true,
-  "vim.easyMotionMarkerBackgroundColor": "#ff0000",
-  "vim.easyMotionMarkerForegroundColor": "#ffff00",
+  "vim.easymotionMarkerBackgroundColor": "#000000",
+  "vim.easymotionMarkerForegroundColorOneChar": "#ff0000",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#ffff00",
+  "vim.easymotionMarkerFontFamily": "Arial",
+  "vim.easymotionMarkerHeight": 12,
+  "vim.easymotionMarkerWidthPerChar": 10,
+  "vim.easymotionMarkerYOffset": 4,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<space>"],
-      "after": ["<leader>"]
+      "before": [","],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
     },
     {
-      "before": [","],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
+      "before": [";"],
+      "after": [":"]
     }
   ],
-  "vim.leader": "<space>"
+  "vim.leader": "<space>",
+  "editor.lineNumbers": "relative"
 }
