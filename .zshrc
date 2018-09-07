@@ -118,6 +118,7 @@ alias al="la"
 
 # Misc
 alias diff="colordiff"
+alias t="tree"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
