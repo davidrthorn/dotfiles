@@ -97,7 +97,7 @@ alias v="nvim"
 # Git
 alias g="git"
 alias gs="git status"
-alias gac="git commit -a"
+alias gac="git add --all && git commit"
 alias gap="git commit -a && git push"
 alias gnah="git reset --hard && git clean -df"
 
