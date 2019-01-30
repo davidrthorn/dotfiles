@@ -7,6 +7,12 @@
   "vim.easymotionMarkerHeight": 12,
   "vim.easymotionMarkerWidthPerChar": 10,
   "vim.easymotionMarkerYOffset": 4,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-;>"],
+      "after": ["<Esc>", "o"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [","],
@@ -15,8 +21,29 @@
     {
       "before": [";"],
       "after": [":"]
+    },
+    {
+      "before": ["<leader>", "'"],
+      "after": ["y", "s", "i", "w", "'"]
+    },
+    {
+      "before": ["<leader>", "\""],
+      "after": ["y", "s", "i", "w", "\""]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "after": ["d", "i", "w", "\"", "0", "p"]
     }
   ],
   "vim.leader": "<space>",
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "python.jediEnabled": false,
+  "vim.disableExtension": false,
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": -1,
+  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "workbench.iconTheme": "vscode-great-icons",
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorTheme": "Nord"
 }
