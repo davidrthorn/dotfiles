@@ -107,6 +107,10 @@ alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
 alias dcom="docker-compose"
 
+# Node
+alias ns="npm start"
+alias nt="npm test"
+
 # Warp
 alias wa="wd rm working && wd add working"
 alias w="wd working"
