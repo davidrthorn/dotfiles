@@ -3,7 +3,7 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="theunraveler"
 
-# Set list of themes to load
+# >et list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
@@ -98,7 +98,7 @@ alias v="nvim"
 alias g="git"
 alias gs="git status"
 alias gac="git add --all && git commit"
-alias gap="git commit -a && git push"
+alias gap="git add --all && git commit && git push"
 alias gnah="git reset --hard && git clean -df"
 
 # Docker

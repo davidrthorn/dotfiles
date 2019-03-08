@@ -1,0 +1,68 @@
+{
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "#000000",
+  "vim.easymotionMarkerForegroundColorOneChar": "#ff0000",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#ffff00",
+  "vim.easymotionMarkerFontFamily": "Arial",
+  "vim.easymotionMarkerHeight": 12,
+  "vim.easymotionMarkerWidthPerChar": 10,
+  "vim.easymotionMarkerYOffset": 4,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-;>"],
+      "after": ["<Esc>", "o"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [","],
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
+    },
+    {
+      "before": [";"],
+      "after": [":"]
+    },
+    {
+      "before": ["leader", "n"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.rename",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["leader", "'"],
+      "after": ["y", "s", "i", "w", "'"]
+    },
+    {
+      "before": ["leader", "\""],
+      "after": ["y", "s", "i", "w", "\""]
+    },
+    {
+      "before": ["leader", "r"],
+      "after": ["d", "i", "w", "\"", "0", "p"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 1.1,
+  "window.titleBarStyle": "custom",
+  "terminal.integrated.rendererType": "dom",
+  "editor.minimap.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Nord",
+  "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.renderIndentGuides": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "eslint.enable": false,
+  "javascript.validate.enable": false,
+  "git.autofetch": true,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "workbench.tips.enabled": false,
+  "workbench.tree.indent": 10
+}
