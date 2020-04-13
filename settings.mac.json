@@ -99,7 +99,6 @@
   "window.titleBarStyle": "custom",
   "terminal.integrated.rendererType": "dom",
   "editor.minimap.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.renderIndentGuides": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
