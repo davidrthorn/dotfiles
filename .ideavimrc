@@ -38,5 +38,6 @@ noremap <leader>u :action Unwrap<CR>
 nnoremap <leader>n :action RenameElement<CR>i
 
 " Surround with quotes
-nnoremap <leader>' ysiw'
+nnoremap <leader>' :action SurroundWith '<CR>
 nnoremap <leader>" ysiw"
+
