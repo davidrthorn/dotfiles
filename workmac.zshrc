@@ -110,8 +110,8 @@ alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
 alias dcom="docker-compose"
 
-alias fystart="docker start fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1"
-alias fystop="docker stop fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1"
+alias fystart="docker start fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1 fydeployment_subscriptions-api_1 fydeployment_proxy_1"
+alias fystop="docker stop fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1 fydeployment_subscriptions-api_1 fydeployment_proxy_1"
 
 # Node
 alias ns="npm start"
@@ -138,3 +138,4 @@ alias t="tree"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+

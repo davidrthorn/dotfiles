@@ -163,5 +163,14 @@
     "terminalCursor.background": "#000000",
   },
   "mocha.nycPath": "/usr/local/bin/nyc",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "gslang.author": "davidrowthorn",
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true
+  },
+  "files.associations": {
+    "*.gs": "javascript"
+},
+"todo-tree.tree.showScanModeButton": false,
+"eslint.alwaysShowStatus": true
 }
