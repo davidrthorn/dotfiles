@@ -23,6 +23,12 @@ nnoremap <leader>rn :set relativenumber!<CR>
 " Replace current line with yanked one
 nnoremap <leader>lp V"0p<CR>
 
+" Replace current Word with yanked one
+nnoremap <leader>Wp viW"0p<CR>
+
+" Replace current word with yanked one
+nnoremap <leader>wp viw"0p<CR>
+
 " Add semi colon to end of line
 inoremap <C-;> <Esc>A;<Esc>
 nnoremap <C-;> A;<Esc>
@@ -37,7 +43,6 @@ noremap <leader>u :action Unwrap<CR>
 " Rename variable
 nnoremap <leader>n :action RenameElement<CR>i
 
-" Surround with quotes
-nnoremap <leader>' :action SurroundWith '<CR>
-nnoremap <leader>" ysiw"
+" Action popup
+nnoremap <leader>a :action GotoAction<CR>
 
