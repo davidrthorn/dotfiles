@@ -2,6 +2,7 @@ set nohlsearch
 set number relativenumber
 set surround
 set clipboard+=unnamed
+set visualbell
 
 map <space> <leader>
 

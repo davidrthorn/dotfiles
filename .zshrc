@@ -110,9 +110,6 @@ alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
 alias dcom="docker-compose"
 
-alias fystart="docker start fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1 fydeployment_subscriptions-api_1 fydeployment_proxy_1"
-alias fystop="docker stop fydeployment_pegasus_1 fydeployment_fyh-website_1 fydeployment_productservice_1 fydeployment_mockserver_1 fydeployment_my-account_1 fydeployment_stripe_1 fydeployment_subscriptions-api_1 fydeployment_proxy_1"
-
 # Node
 alias ns="npm start"
 alias nt="npm test"
@@ -122,10 +119,6 @@ alias wa="wd rm working && wd add working"
 alias w="wd working"
 alias b="cd -"
 
-# Mysql/MariaDB
-alias mstart="brew services start mariadb"
-alias mstop="brew services stop mariadb"
-
 # Typos
 alias sl="ls"
 alias al="la"
@@ -134,8 +127,20 @@ alias al="la"
 alias diff="colordiff"
 alias t="tree"
 
+function ssh_alias() {
+  ssh $@;
+  setterm -default -clear reset;
+}
+alias ssh=ssh_alias
+
+alias copy='xclip -selection clipboard'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
