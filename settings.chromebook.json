@@ -2,10 +2,7 @@
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "#000000",
   "vim.easymotionMarkerForegroundColorOneChar": "#ff0000",
-  "vim.easymotionMarkerForegroundColorTwoChar": "#ffff00",
-  "vim.easymotionMarkerFontFamily": "Arial",
   "vim.easymotionMarkerHeight": 12,
-  "vim.easymotionMarkerWidthPerChar": 10,
   "vim.easymotionMarkerYOffset": 4,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
@@ -128,5 +125,6 @@
     "terminalCursor.background": "#000000",
   },
   "mocha.nycPath": "/usr/local/bin/nyc",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false
 }

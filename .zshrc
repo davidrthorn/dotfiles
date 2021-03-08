@@ -5,6 +5,9 @@ ZSH_THEME="theunraveler"
 export ZSH=~/.oh-my-zsh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/opt/sonarscanner/bin
+export DJANGO_BIDDABLE_BROWSER=chrome
+
 
 # >et list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -68,6 +71,7 @@ plugins=(
 source ${ZSH}/oh-my-zsh.sh
 
 # User configuration
+set extended_glob
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -105,10 +109,13 @@ alias gap="git add --all && git commit && git push"
 alias gnah="git reset --hard && git clean -df"
 
 # Docker
+alias dstart="systemctl start docker"
+alias dstop="systemctl stop docker"
 alias dk="docker"
 alias dps="docker ps"
 function dport() {docker inspect "$1" | grep 'IPAddress'} 
 alias dcom="docker-compose"
+alias dkillall="docker kill $(docker ps -q)"
 
 # Node
 alias ns="npm start"
@@ -126,12 +133,7 @@ alias al="la"
 # Misc
 alias diff="colordiff"
 alias t="tree"
-
-function ssh_alias() {
-  ssh $@;
-  setterm -default -clear reset;
-}
-alias ssh=ssh_alias
+alias pi="pip install"
 
 alias copy='xclip -selection clipboard'
 
@@ -143,4 +145,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+
+function venv() {
+  pip -V | sed -rn 's/.*virtualenvs\/(\w+).*$/\1/p'
+}
+
+

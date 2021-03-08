@@ -1,16 +1,18 @@
 set nohlsearch
 set number relativenumber
-set surround
 set clipboard+=unnamed
 set visualbell
 
 map <space> <leader>
 
+" Plugins
+set surround
+set commentary
+set easymotion
+
+
 " KJump
 nmap , :action KJumpAction.Word0<CR>
-
-" Split pane vertically
-<leader>sp :action SplitVertically<CR>
 
 " Semicolon for command  
 nnoremap ; :
@@ -28,15 +30,11 @@ nnoremap <leader>lp V"0p<CR>
 nnoremap <leader>Wp viW"0p<CR>
 
 " Replace current word with yanked one
-nnoremap <leader>wp viw"0p<CR>
+" nnoremap <leader>wp viw"0p<CR>
 
 " Add semi colon to end of line
-inoremap <C-;> <Esc>A;<Esc>
+inoremap <C-;> <C-c>
 nnoremap <C-;> A;<Esc>
-
-" Comment line
-nnoremap gcc :action CommentByLineComment<CR>
-vnoremap gc :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<CR>
 
 " Unwrap surrounding construct
 noremap <leader>u :action Unwrap<CR>
@@ -47,3 +45,6 @@ nnoremap <leader>n :action RenameElement<CR>i
 " Action popup
 nnoremap <leader>a :action GotoAction<CR>
 
+" Back properly
+nnoremap <C-o> :action Back<CR>
+ 
