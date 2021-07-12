@@ -151,3 +151,7 @@ function venv() {
 }
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/drowthorn/.sdkman"
+[[ -s "/Users/drowthorn/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/drowthorn/.sdkman/bin/sdkman-init.sh"
